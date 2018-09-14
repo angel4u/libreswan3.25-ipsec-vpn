@@ -11,7 +11,7 @@
 # know how you have improved it!
 
 # Check https://libreswan.org for the latest version
-SWAN_VER=3.22
+SWAN_VER=3.25
 
 ### DO NOT edit below this line ###
 
@@ -78,7 +78,7 @@ fi
 is_downgrade_to_322=0
 if [ "$SWAN_VER" = "3.22" ]; then
   if printf '%s' "$ipsec_ver" | grep -qF -e "3.23" -e "3.25"; then
-    is_downgrade_to_322=1
+    is_downgrade_to_325=1
   fi
 fi
 
